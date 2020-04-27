@@ -3,7 +3,7 @@
 
 ### สรุปเนื้อหา
 
-##### MIPS 
+#### **MIPS**
 - เป็นหน่วยประมวลผล 32-bit แบบ RISC (Reduced Instruction Set Computer)
 - ทุกคำสั่งจะมีขนาด 32-bit
 - เป็นสถาปัตยกรรม แบบ Von Neumann
