@@ -1,3 +1,3 @@
 # รายงาน
-# วิชา CN210
-# Computer Architecture สถาปัตยกรรมคอมพิวเตอร์
+### วิชา CN210
+###### Computer Architecture สถาปัตยกรรมคอมพิวเตอร์
