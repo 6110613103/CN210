@@ -32,20 +32,20 @@
 เป็นคำสั่งเกี่ยวกับการคำนวณทางคณิตศาสตร์ และตรรกศาสตร์
 ประกอบด้วย 6 ส่วน
 
-<img src="2 R-type.jpg" width=500>
+<img src="2 R-type.png" width=500>
 
 
 **I-Format**
 เป็นคำสั่งโหลด-เก็บ และเกี่ยวกับMemory
 ประกอบด้วย 4 ส่วน
 
-<img src="3 I-type.jpg" width=500>
+<img src="3 I-type.png" width=500>
 
 
 **J-Format**
 เป็นคำสั่งกระโด(Jump)ไปยังตำแหน่งที่ระบุ ทั้งแบบมีและไม่มีเงื่อนไข
 ประกอบด้วย 2 ส่วน
 
-<img src="4 J-type.jpg" width=500>
+<img src="4 J-type.png" width=500>
 
 
