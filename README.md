@@ -18,7 +18,7 @@
   2. *Main Memoey* คือ หน่วยคอวามจำหลัก
   3. *I/O* หรือ Input and Output คือ หน่วยรับเข้าและส่งออกข้อมูล
 
-![image](https://drive.google.com/drive/u/0/folders/1ODsYSeV3Pn2unq13QaIoQWCDVhIbd_rI)
+![image](https://www.pinterest.com/pin/613685886713639385)
 
 #### **MIPS**
 - เป็นหน่วยประมวลผล 32-bit แบบ RISC (Reduced Instruction Set Computer)
