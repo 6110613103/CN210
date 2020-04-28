@@ -22,7 +22,7 @@
 ![image](1.jpg)
 
 #### **MIPS**
-* เป็นหน่วยประมวลผล 32-bit แบบ RISC (Reduced Instruction Set Computer)
+* เป็นหน่วยประมวลผล 32-bit แบบ RISC (Reduced Instruction Set Computer)  
 *RISC*
    * มีชุดคำสั่งน้อยๆ และไม่ซับซ้อน
    * ทำงาน 1 คำสั่งต่อรอบสัญญาณนาฬิกา
