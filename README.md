@@ -19,7 +19,7 @@
   3. *I/O* หรือ Input and Output คือ หน่วยรับเข้าและส่งออกข้อมูล
 
 
-![image](1.jpg)
+<img src="1.jpg" width=100>
 
 #### **MIPS**
 - เป็นหน่วยประมวลผล 32-bit แบบ RISC (Reduced Instruction Set Computer)
