@@ -124,3 +124,33 @@ add $3, $1, $2 เริ่มแรกดูที่ op 6-bit แรก 000000
   
 sw $3, $9(8) เป็นการเขียนค่าที่ตำแหน่งที่$9 บวกเพิ่มอีก8 ลงใน$3 รู้ว่าเป็นคำสั่งsw คือดูที่ op 6-bit แรก 101011    
 ซึ่งคำสั่งนี้ในเลขฐาน16 คือ AD230008 และ ในเลขฐาน2 คือ 10101101001000110000000000001000   
+
+
+# **การบ้านครั้งที่ 3**
+<br>[Multi-Cycle and Single-Cycle](https://www.youtube.com/watch?v=fYZY9J_bkPo)  
+
+**ความแตกต่างระหว่าง Multi Cycle และ Single Cycle**  
+
+![image](10 ms.jpg)  
+
+1) ALU มีหน้าที่ทำการคำนวณทางคณิตศาสตร์ และตรรกศาสตร์
+	* Single Cycle มี ALU 3 ตัว
+	* Multi Cycle มี ALU 1 ตัว
+2) Memory หน่วยเก็บข้อมูลที่ได้รับมา
+	* Single Cycle มี Memory 2 ตัว แบ่งเป็น *Instruction Memory* ทำหน้าที่เก็บชุดคำสั่ง และ *Data Memory* มีหน้าที่เก็บข้อมูล  
+	* Multi Cycle มี Memory 1 ตัว ทำการเก็บทั้งชุดคำสั่งและข้อมูลเอาไว้ด้วยกัน  
+3) A และ B  
+	* Single Cycle ไม่มี A และ B  
+	* Multi Cycle มี A และ B ที่เอาไว้พักค่าก่อนที่Muxจะทำการเลือกเข้าไปคำนวณในALU  
+4) ALUout  
+	* Single Cycle ไม่มี ALUout
+	* Multi Cycle มี ALUout ที่ทำหน้าที่เอาไว้พักข้อมูล หลังจากที่ทำการคำนวณในALUเสร็จแล้ว ก่อนที่จะดำเดินขั้นตอนถัดไป  
+5) จำนวน Mux  
+	* Single Cycle มี Mux 4 ตัว ไว้คอยเลือกข้อมูลในการดำเนินงาน  
+	* Multi Cycle มี Mux 5 ตัว ไว้คอยเลือกข้อมูลในการดำเนินงาน  
+6) Shift left 2  
+	* Single Cycle หลังจากที่ทำการ Shift left 2 ข้อมูลจะเข้า ALU เลยโดยไม่ผ่านMux  
+	* Multi Cycle หลังจากที่ทำการ Shift left 2 ข้อมูลจะรอที่ Mux ก่อนเพื่อรอให้Muxเลือกเข้าไปคำนวณใน ALU  
+7) IRWrite ,RegWrite และ Memory Data Register
+	* Single Cycle หลังจากที่ทำการแปลงคำสั่งที่Instruction Memoryแล้ว จะเข้าไปรอที่Mux หลังจากนั้นจะเข้าสู่ RegWrite เลย
+	* Multi Cycle หลังจากที่ทำการแปลงคำสั่งที่Memoryแล้ว คำสั่งจะถูกเก็บเข้าไปได้2ทาง คือ IRWrite และ Memory Data Register ก่อนที่จะเข้าไปรอที่Mux และถูกเลือกเข้าสู่ RegWrite  
